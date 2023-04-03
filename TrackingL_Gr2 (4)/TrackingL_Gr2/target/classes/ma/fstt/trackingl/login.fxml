@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="BorderPaneF" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.loginController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#361a04" layoutX="103.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+            </Text>
+            <Text fill="#361a04e8" layoutX="61.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The best in the &#10;      market">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+            </Text>
+            <Text layoutX="103.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright(c).All Right Reserved" />
+            <ImageView fitHeight="228.0" fitWidth="276.0" layoutX="24.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/2071475.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="usernameF" layoutX="112.0" layoutY="170.0" promptText="Enter username" />
+            <PasswordField fx:id="passwordF" layoutX="112.0" layoutY="224.0" promptText="Enter password" />
+            <Button fx:id="buttonloginF" layoutX="128.0" layoutY="286.0" mnemonicParsing="false" onAction="#openlogin" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: orange;" text="Log In" textFill="WHITE" />
+            <Text fill="ORANGE" fontSmoothingType="LCD" layoutX="99.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot your password?" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="ORANGE" layoutX="121.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="34.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+            <Text layoutX="34.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+            <Label fx:id="textF" layoutX="71.0" layoutY="257.0" prefHeight="18.0" prefWidth="245.0" textFill="#f22424" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
